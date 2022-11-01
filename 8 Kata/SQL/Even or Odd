@@ -1,0 +1,10 @@
+/*
+Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers.
+*/
+
+SELECT
+  CASE
+    WHEN number%2 = 0 THEN 'Even'
+    WHEN number%2 != 0 THEN 'Odd'
+    END is_even
+FROM numbers
